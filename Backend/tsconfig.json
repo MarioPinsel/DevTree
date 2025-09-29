@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist", //Donde se va a compilar el proyecto (no se sube a git)
+        "rootDir": "./src", //La carpeta donde va a encontrarse el codigo
+        "lib": [
+            "ESNext"
+        ], //Lista de bilbioteca ESNext es la version mas reciente
+        "target": "ESNext", //Nivel de la version a la cual vamos a compilar el codigo
+        "moduleResolution": "NodeNext", //Sintaxis de TypeScript
+        "module": "NodeNext", //Forma en la cual se van a compilar los modulos en Ts
+        "strict": false, //Ejecuta Ts De una manera no tan estricta
+        "sourceMap": true, //Archio que permite Debug
+        "esModuleInterop": true, //Permite usar modulos de CJS y ESM
+        "declaration": true, //Habilita poder usar .d .ts
+    },
+    "include": [
+        "src/**/*.ts"
+    ] //Que archivos vamos a incluir en la compilacion
+}
