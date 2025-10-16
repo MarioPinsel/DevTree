@@ -4,14 +4,13 @@ export default function LoginView() {
 
     return (
         <>
-            <div className=' bg-slatet-800 min-h-screen'>
-                <div className=' max-w-lg mx-auto pt-10 px-5'></div>
-                <img src='/logo.svg' alt='Logotipo' />
-            </div>
-            <nav>
-                <Link to="/auth/register">
-                    ¿No tienes cuenta? Crea una aqui
-                </Link>
+            <h1 className="text-4xl text-white font-bold">Iniciar Sesión</h1>
+            <nav className="mt-10">
+                <Link
+                    className="text-center text-white text-lg block"
+                    to="/auth/register"
+                >¿No tienes cuenta? Crea una aquí</Link>
+
             </nav>
         </>
     )
