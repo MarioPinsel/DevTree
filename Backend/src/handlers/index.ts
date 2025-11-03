@@ -3,6 +3,7 @@ import { check, validationResult } from 'express-validator'
 import slug from "slug"
 import User from "../models/Users"
 import { checkPassword, hashPassword } from "../utils/auth";
+import { genareteJWT } from "../utils/jwt";
 
 export const createAccount = async (req: Request, res: Response) => {
 
@@ -54,6 +55,8 @@ export const login = async (req: Request, res: Response) => {
         return res.status(401).json({ error: error.message })
     }
 
-    res.send("Login correcto")
+    const token = genareteJWT({ id: user._id })
+
+    res.send(token)
 
 }
