@@ -16,4 +16,5 @@ app.use(express.json()); // Middleware para parsear JSON
 
 app.use('/', router)
 
+
 export default app;
