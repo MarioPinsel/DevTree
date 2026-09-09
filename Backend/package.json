@@ -30,5 +30,8 @@
     "start": "node dist/index.js"
   },
   "author": "Mario Pinto",
-  "license": "ISC"
+  "license": "ISC",
+  "allowScripts": {
+    "bcrypt@6.0.0": true
+  }
 }
